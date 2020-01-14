@@ -1,7 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8" import="java.util.*"%>
 <%
 String strMsg;
-String strMsg;
 String yearTemp = request.getParameter("year");
 String monthTemp = request.getParameter("month");
 String dateTemp  = request.getParameter("day");
