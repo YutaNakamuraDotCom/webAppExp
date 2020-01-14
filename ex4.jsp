@@ -1,9 +1,13 @@
 <%@ page contentType="text/html; charset=utf-8" import="java.util.*"%>
 <%
 String strMsg;
-int year=Integer.parseInt(request.getParameter("year"));
-int month=Integer.parseInt(request.getParameter("month"));
-int day=Integer.parseInt(request.getParameter("day"));
+String strMsg;
+String yearTemp = request.getParameter("year");
+String monthTemp = request.getParameter("month");
+String dateTemp  = request.getParameter("day");
+int year=Integer.parseInt(yearTemp);
+int month=Integer.parseInt(monthTemp);
+int day=Integer.parseInt(dateTemp);
 int[] intBirth={year,month,day};
 Calendar calToday=Calendar.getInstance();
 Calendar calTemp=Calendar.getInstance();
